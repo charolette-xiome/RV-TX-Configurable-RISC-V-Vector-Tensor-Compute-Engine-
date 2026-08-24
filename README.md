@@ -98,36 +98,6 @@ rv-tx/
 │   └── verification/    # Verification plan, test lists
 └── README.md
 ```
-
----
-
-## Roadmap
-
-| Phase | Topic | Hours | Status |
-|-------|-------|-------|--------|
-| 0 | Verilog RTL foundation | 60 | ⬜ |
-| 1 | SystemVerilog RTL | 50 | ⬜ |
-| 2 | Computer Architecture | 100 | ⬜ |
-| 3 | RISC-V ISA (RV32I / RV32M) | 45 | ⬜ |
-| 4 | RV32I CPU RTL (5-stage pipeline) | 70 | ⬜ |
-| 5 | Vector Architecture | 60 | ⬜ |
-| 6 | Vector RTL | 50 | ⬜ |
-| 7 | Tensor / Systolic Architecture | 60 | ⬜ |
-| 8 | Tensor RTL | 60 | ⬜ |
-| 9 | Memory Architecture | 60 | ⬜ |
-| 10 | Interfaces / AXI concepts | 25 | ⬜ |
-| 11 | SystemVerilog Verification (OOP, randomization, assertions, coverage) | 50 | ⬜ |
-| 12 | Non-UVM Verification Environment | 40 | ⬜ |
-| 13 | UVM | 70 | ⬜ |
-| 14 | UVM Environment for RV-TX | 70 | ⬜ |
-| 15 | Full Verification (CPU + Vector + Tensor + System tests) | 50 | ⬜ |
-| 16 | Coverage Closure (>95% code/functional, 100% assertion) | 30 | ⬜ |
-| | **Total** | **~900 h** | |
-
-*(Mark phases ✅ as they're completed — update this table as the project progresses.)*
-
----
-
 ## Progress
 
 > Update this section as you go — it's the first thing a visitor/recruiter will look at.
@@ -144,7 +114,7 @@ rv-tx/
 - [ ] UVM verification environment
 - [ ] Coverage closure
 
-**Currently working on:** *(fill in — e.g. "Phase 0: building foundational RTL blocks (ALU, register file, FIFO) before starting the RV32I core")*
+**Currently working on:** *Verilog/SystemVerilog RTL foundation (ALU, regfile, FIFO, RAM, UART, FSM, pipelined multiplier)*
 
 ---
 
@@ -166,7 +136,3 @@ Used deliberately and deeply rather than collecting many shallow tutorials:
 ## Why This Project
 
 This is being built as a serious RTL/DV portfolio project — the intent is to demonstrate, end to end: parameterized SystemVerilog RTL design, RISC-V microarchitecture, vector/tensor accelerator design, and professional-grade verification (assertions, functional coverage, UVM) — the same skill set used in real ASIC/accelerator teams (e.g. CPU, GPU, and TPU-adjacent design/verification roles).
-
-## License
-
-*(Add your license here, e.g. MIT — see [choosealicense.com](https://choosealicense.com/))*
