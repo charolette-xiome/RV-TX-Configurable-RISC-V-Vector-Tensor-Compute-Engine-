@@ -1,0 +1,100 @@
+[2026-08-26 14:14:01 UTC] vlib work && vlog '-timescale' '1ns/1ns' design.sv testbench.sv  && vsim -c -do "vsim +access+r; run -all; exit"  
+VSIMSA: Configuration file changed: `/home/runner/library.cfg'
+ALIB: Library "work" attached.
+work = ./work/work.lib
+MESSAGE "Unit top modules: tb_alu."
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
+done
+# Aldec, Inc. Riviera-PRO version 2025.04.139.9738 built for Linux64 on May 30, 2025.
+# HDL, SystemC, and Assertions simulator, debugger, and design environment.
+# (c) 1999-2025 Aldec, Inc. All rights reserved.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.1 [s]
+# SLP: Finished : 0.1 [s]
+# SLP: 0 primitives and 3 (100.00%) other processes in SLP
+# SLP: 15 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Riviera-PRO EDU Edition. The performance of simulation is reduced.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 4567 kB (elbread=427 elab2=4132 kernel=7 sdf=0)
+# KERNEL: ASDB file was created in location /home/runner/dataset.asdb
+# KERNEL: PASS | OP=OP_ADD | A=0000000a | B=00000005 | RESULT=0000000f
+# KERNEL: PASS | OP=OP_ADD | A=00000064 | B=00000019 | RESULT=0000007d
+# KERNEL: PASS | OP=OP_SUB | A=0000000a | B=00000005 | RESULT=00000005
+# KERNEL: PASS | OP=OP_SUB | A=00000064 | B=00000019 | RESULT=0000004b
+# KERNEL: PASS | OP=OP_AND | A=aaaaaaaa | B=55555555 | RESULT=00000000
+# KERNEL: PASS | OP=OP_AND | A=ffff0000 | B=0f0f0f0f | RESULT=0f0f0000
+# KERNEL: PASS | OP=OP_OR | A=aaaaaaaa | B=55555555 | RESULT=ffffffff
+# KERNEL: PASS | OP=OP_OR | A=ffff0000 | B=0000ffff | RESULT=ffffffff
+# KERNEL: PASS | OP=OP_XOR | A=aaaaaaaa | B=55555555 | RESULT=ffffffff
+# KERNEL: PASS | OP=OP_XOR | A=ffff0000 | B=0f0f0f0f | RESULT=f0f00f0f
+# KERNEL: PASS | OP=OP_SLL | A=00000001 | B=00000001 | RESULT=00000002
+# KERNEL: PASS | OP=OP_SLL | A=00000001 | B=00000004 | RESULT=00000010
+# KERNEL: PASS | OP=OP_SRL | A=80000000 | B=00000001 | RESULT=40000000
+# KERNEL: PASS | OP=OP_SRL | A=ffffffff | B=00000004 | RESULT=0fffffff
+# KERNEL: PASS | OP=OP_SRA | A=80000000 | B=00000001 | RESULT=c0000000
+# KERNEL: PASS | OP=OP_SRA | A=ffffffff | B=00000004 | RESULT=ffffffff
+# KERNEL: PASS | OP=OP_SLT | A=0000000a | B=00000014 | RESULT=00000001
+# KERNEL: PASS | OP=OP_SLT | A=ffffffff | B=00000001 | RESULT=00000001
+# KERNEL: PASS | OP=OP_SLTU | A=0000000a | B=00000014 | RESULT=00000001
+# KERNEL: PASS | OP=OP_SLTU | A=ffffffff | B=00000001 | RESULT=00000000
+# KERNEL: PASS | OP=OP_ADD | A=00000000 | B=00000000 | RESULT=00000000
+# KERNEL: PASS | OP=OP_ADD | A=ffffffff | B=00000001 | RESULT=00000000
+# KERNEL: PASS | OP=OP_ADD | A=ffffffff | B=ffffffff | RESULT=fffffffe
+# KERNEL: PASS | OP=OP_SUB | A=00000000 | B=00000000 | RESULT=00000000
+# KERNEL: PASS | OP=OP_SUB | A=00000000 | B=00000001 | RESULT=ffffffff
+# KERNEL: PASS | OP=OP_SUB | A=ffffffff | B=00000001 | RESULT=fffffffe
+# KERNEL: PASS | OP=OP_AND | A=00000000 | B=ffffffff | RESULT=00000000
+# KERNEL: PASS | OP=OP_AND | A=ffffffff | B=ffffffff | RESULT=ffffffff
+# KERNEL: PASS | OP=OP_OR | A=00000000 | B=00000000 | RESULT=00000000
+# KERNEL: PASS | OP=OP_OR | A=ffffffff | B=00000000 | RESULT=ffffffff
+# KERNEL: PASS | OP=OP_XOR | A=00000000 | B=00000000 | RESULT=00000000
+# KERNEL: PASS | OP=OP_XOR | A=ffffffff | B=ffffffff | RESULT=00000000
+# KERNEL: PASS | OP=OP_XOR | A=ffffffff | B=00000000 | RESULT=ffffffff
+# KERNEL: PASS | OP=OP_SLL | A=12345678 | B=00000000 | RESULT=12345678
+# KERNEL: PASS | OP=OP_SRL | A=12345678 | B=00000000 | RESULT=12345678
+# KERNEL: PASS | OP=OP_SRA | A=12345678 | B=00000000 | RESULT=12345678
+# KERNEL: PASS | OP=OP_SLL | A=80000000 | B=00000001 | RESULT=00000000
+# KERNEL: PASS | OP=OP_SRL | A=80000000 | B=00000001 | RESULT=40000000
+# KERNEL: PASS | OP=OP_SRA | A=80000000 | B=00000001 | RESULT=c0000000
+# KERNEL: PASS | OP=OP_SLL | A=00000001 | B=0000001f | RESULT=80000000
+# KERNEL: PASS | OP=OP_SRL | A=80000000 | B=0000001f | RESULT=00000001
+# KERNEL: PASS | OP=OP_SRA | A=80000000 | B=0000001f | RESULT=ffffffff
+# KERNEL: PASS | OP=OP_SLL | A=00000001 | B=ffffffff | RESULT=80000000
+# KERNEL: PASS | OP=OP_SRL | A=ffffffff | B=ffffffff | RESULT=00000001
+# KERNEL: PASS | OP=OP_SRA | A=80000000 | B=ffffffff | RESULT=ffffffff
+# KERNEL: PASS | OP=OP_SLT | A=ffffffff | B=00000001 | RESULT=00000001
+# KERNEL: PASS | OP=OP_SLT | A=80000000 | B=00000000 | RESULT=00000001
+# KERNEL: PASS | OP=OP_SLT | A=7fffffff | B=ffffffff | RESULT=00000000
+# KERNEL: PASS | OP=OP_SLTU | A=00000000 | B=ffffffff | RESULT=00000001
+# KERNEL: PASS | OP=OP_SLTU | A=ffffffff | B=00000001 | RESULT=00000000
+# KERNEL: PASS | OP=OP_SLTU | A=00000000 | B=00000001 | RESULT=00000001
+# KERNEL: 
+# KERNEL: ==========================================
+# KERNEL:              ALU TEST SUMMARY             
+# KERNEL: ==========================================
+# KERNEL: TOTAL TESTS : 51
+# KERNEL: PASSED      : 51
+# KERNEL: FAILED      : 0
+# KERNEL: ==========================================
+# KERNEL: ************ ALL TESTS PASSED ************
+# RUNTIME: Info: RUNTIME_0068 testbench.sv (366): $finish called.
+# KERNEL: Time: 52 ns,  Iteration: 0,  Instance: /tb_alu,  Process: @INITIAL#139_0@.
+# KERNEL: stopped at time: 52 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# VSIM: Simulation has finished.
+Done
