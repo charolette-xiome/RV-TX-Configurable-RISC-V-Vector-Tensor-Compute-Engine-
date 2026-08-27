@@ -1,0 +1,144 @@
+vlib work && vlog '-timescale' '1ns/1ns' design.sv testbench.sv  && vsim -c -do "vsim +access+r; run -all; exit"
+
+VSIMSA: Configuration file changed: `/home/runner/library.cfg'
+ALIB: Library "work" attached.
+work = ./work/work.lib
+MESSAGE "Unit top modules: tb_reg_file."
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
+done
+Aldec, Inc. Riviera-PRO version 2025.04.139.9738 built for Linux64 on May 30, 2025.
+HDL, SystemC, and Assertions simulator, debugger, and design environment.
+(c) 1999-2025 Aldec, Inc. All rights reserved.
+ELBREAD: Elaboration process.
+ELBREAD: Elaboration time 0.0 [s].
+KERNEL: Main thread initiated.
+KERNEL: Kernel process initialization phase.
+ELAB2: Elaboration final pass...
+KERNEL: PLI/VHPI kernel's engine initialization done.
+PLI: Loading library '/usr/share/Riviera-PRO/bin/libsystf.so'
+ELAB2: Create instances ...
+KERNEL: Time resolution set to 1ps.
+ELAB2: Create instances complete.
+SLP: Started
+SLP: Elaboration phase ...
+SLP: Elaboration phase ... done : 0.0 [s]
+SLP: Generation phase ...
+SLP: Generation phase ... done : 0.1 [s]
+SLP: Finished : 0.1 [s]
+SLP: 0 primitives and 5 (100.00%) other processes in SLP
+SLP: 24 (96.00%) signals in SLP and 1 (4.00%) interface signals
+ELAB2: Elaboration final pass complete - time: 0.1 [s].
+KERNEL: SLP loading done - time: 0.0 [s].
+KERNEL: Warning: You are using the Riviera-PRO EDU Edition. The performance of simulation is reduced.
+KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+KERNEL: SLP simulation initialization done - time: 0.0 [s].
+KERNEL: Kernel process initialization done.
+Allocation: Simulator allocated 4580 kB (elbread=427 elab2=4145 kernel=8 sdf=0)
+KERNEL: ASDB file was created in location /home/runner/dataset.asdb
+KERNEL:
+KERNEL: ========================================
+KERNEL: TEST 1: Basic write/read
+KERNEL: ========================================
+KERNEL: [PASS] READ1 x5 = 12345678
+KERNEL:
+KERNEL: ========================================
+KERNEL: TEST 2: Multiple registers
+KERNEL: ========================================
+KERNEL: [PASS] READ1 x1 = 11111111
+KERNEL: [PASS] READ1 x10 = aaaaaaaa
+KERNEL: [PASS] READ1 x31 = ffffffff
+KERNEL:
+KERNEL: ========================================
+KERNEL: TEST 3: Two independent read ports
+KERNEL: ========================================
+KERNEL: [PASS] Two independent read ports
+KERNEL:
+KERNEL: ========================================
+KERNEL: TEST 4: Same register on both read ports
+KERNEL: ========================================
+KERNEL: [PASS] Same register read
+KERNEL:
+KERNEL: ========================================
+KERNEL: TEST 5: x0 read
+KERNEL: ========================================
+KERNEL: [PASS] READ1 x0 = 00000000
+KERNEL: [PASS] READ2 x0 = 00000000
+KERNEL:
+KERNEL: ========================================
+KERNEL: TEST 6: x0 write ignored
+KERNEL: ========================================
+KERNEL: [PASS] READ1 x0 = 00000000
+KERNEL: [PASS] READ2 x0 = 00000000
+KERNEL:
+KERNEL: ========================================
+KERNEL: TEST 7: Write enable
+KERNEL: ========================================
+KERNEL: [PASS] Write disabled correctly
+KERNEL:
+KERNEL: ========================================
+KERNEL: TEST 8: Register isolation
+KERNEL: ========================================
+KERNEL: [PASS] READ1 x6 = aaaaaaaa
+KERNEL: [PASS] READ1 x7 = 77777777
+KERNEL:
+KERNEL: ========================================
+KERNEL: TEST 9: Boundary registers
+KERNEL: ========================================
+KERNEL: [PASS] READ1 x1 = 00000001
+KERNEL: [PASS] READ1 x31 = 80000000
+KERNEL:
+KERNEL: ========================================
+KERNEL: TEST 10: Data patterns
+KERNEL: ========================================
+KERNEL: [PASS] READ1 x8 = 00000000
+KERNEL: [PASS] READ1 x9 = ffffffff
+KERNEL: [PASS] READ1 x10 = aaaaaaaa
+KERNEL: [PASS] READ1 x11 = 55555555
+KERNEL:
+KERNEL: ========================================
+KERNEL: TEST 11: Repeated writes
+KERNEL: ========================================
+KERNEL: [PASS] READ1 x12 = 44444444
+KERNEL:
+KERNEL: ========================================
+KERNEL: TEST 12: Simultaneous read/write
+KERNEL: ========================================
+KERNEL: [PASS] Simultaneous read/write
+KERNEL: [PASS] READ1 x15 = cccccccc
+KERNEL:
+KERNEL: ========================================
+KERNEL: TEST 13: Write-first behavior
+KERNEL: ========================================
+KERNEL: [PASS] Write-first behavior
+KERNEL:
+KERNEL: ========================================
+KERNEL: TEST 14: x0 remains zero
+KERNEL: ========================================
+KERNEL: [PASS] READ1 x0 = 00000000
+KERNEL: [PASS] READ2 x0 = 00000000
+KERNEL:
+KERNEL: ========================================
+KERNEL: TEST 15: Independent read verification
+KERNEL: ========================================
+KERNEL: [PASS] Independent read verification
+KERNEL:
+KERNEL: ========================================
+KERNEL: TEST 16: Different data on both ports
+KERNEL: ========================================
+KERNEL: [PASS] Different data on both ports
+KERNEL:
+KERNEL:
+KERNEL: ========================================
+KERNEL:             TEST SUMMARY
+KERNEL: ========================================
+KERNEL: PASS = 27
+KERNEL: FAIL = 0
+KERNEL: ========================================
+KERNEL:        ALL TESTS PASSED
+KERNEL: ========================================
+RUNTIME: Info: RUNTIME_0068 testbench.sv (679): $finish called.
+KERNEL: Time: 471 ns,  Iteration: 0,  Instance: /tb_reg_file,  Process: @INITIAL#204_1@.
+KERNEL: stopped at time: 471 ns
+VSIM: Simulation has finished. There are no more test vectors to simulate.
+VSIM: Simulation has finished.
+Done
